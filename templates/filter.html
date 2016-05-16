@@ -1,0 +1,91 @@
+<ion-modal-view ng-controller="filterCtrl">
+  <ion-header-bar>
+
+    <h1 class="title">Filter</h1>
+
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+
+  </ion-header-bar>
+
+  <ion-content>
+
+    <form ng-submit="doLogin()">
+     
+     <div class="row">
+  <div class="col">
+    
+
+      <div class="clear-button-bar">
+            <a class="clear-bar-button clear-bar-button-first clear-bar-button-active"  id="cha" ng-class="{'button-positive' : isActive('item1')}" ng-click="chatts()">Color</a>
+            <a class="clear-bar-button clear-bar-button-last " id="con" ng-click="contact()">Contacts</a>
+      </div> 
+
+  </div>
+
+
+  <div class="col col-75">
+    
+    <div class="html chats" id="chatt">
+<ul class="list">
+
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+      Red 
+      </li>
+    <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+Yellow  </li>
+    <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+Blue    <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+Black  </li>
+    <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+Green  </li>
+    <li class="item item-checkbox">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+White  </li>
+</ul>
+    </div>
+
+  <div id="contacts">
+      <div class="list">
+
+          <div class="item item-divider">
+          B  </div>
+
+           <a class="item item-avatar" href="#">
+                <img src="venkman.jpg">
+                <h2>Bharta</h2>
+              </a>
+              <a class="item item-avatar" href="#">
+                <img src="venkman.jpg">
+                <h2>Bablu</h2>
+              </a>
+
+      </div>
+      </div>
+      
+  </div>
+
+</div>
+
+    </form>
+  </ion-content>
+
+</ion-modal-view>

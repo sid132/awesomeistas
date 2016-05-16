@@ -1,0 +1,372 @@
+.coll{
+  width: 48%;
+  float: left;
+  margin: 0px;
+
+}
+
+.ssm{         /*USED IN BOTH ITEMS AND ITEM-DETAIL TABS FOR PRODUCT NAME AND PRICE*/
+  font-family: roboto;
+  color:#141414 ;
+  font-size: 12px;
+text-align: center;
+  position: relative;
+}
+
+
+/*FOR HOME PAGE*/
+/* FLOATING BUTTONS IN HOME PAGE*/
+
+#navs {
+    position: absolute;
+    right: 5%;
+    bottom: 9%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+#navs>li,
+#navs:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #666666;
+}
+
+#navs>li {
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: .6s;
+}
+
+#navs:after {
+    font-family:"Ionicons";
+    content:"\f218";
+    /*content: attr(data-close);*/
+    z-index: 999;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+#navs.active:after {
+    font-family:"Ionicons";
+    content: "\f209"; 
+}
+
+#navs a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+
+#navs.active> li:nth-child(1) {
+    transition-delay: 0ms; 
+    -webkit-transition-delay: 0ms; 
+    /*right: 120px;*/ 
+    top: -50px
+}
+
+#navs.active> li:nth-child(2) {
+    transition-delay: 50ms; -webkit-transition-delay: 50ms; top: -100px;
+}
+#navs.active> li:nth-child(3){
+    transition-delay: 100ms; -webkit-transition-delay: 100ms; top: -150px;
+}
+
+.icon.menu-icon{
+    font-size: 20px;
+}
+/* //END// FLOATING BUTTONS IN HOME PAGE*/
+
+/*FOR HOME PAGE*/
+
+
+.bu{
+  height: 20px;
+}
+hr{
+  color: #141414;
+}
+
+/* FOR MYORDERS TABS */
+.button-positive-active{
+  color: blue;
+}
+
+.ord{
+  font-size: 12px;
+}
+.deli{
+font-size: 12px;
+color: green;
+}
+/* //END// FOR MYORDERS TABS */
+
+/* SIDE MENU */
+
+/* SIDE MENU ACCORDION LIST */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+  text-decoration: none;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+/* //END// SIDE MENU ACCORDION LIST */
+
+/* //END// SIDE MENU //END// */
+
+
+/* USED IN ITEMS TABS */
+.mk{
+  height:20px;
+}
+.ss{
+  padding: 0px;
+  margin-top: -3%;
+}
+
+.spn{ /*USED IN BOTH ITEMS AND ITEM-DETAIL TABS FOR PRODUCT NAME AND PRICE*/
+  font-family: roboto;
+  color:#141414 ;
+  font-size: 12px;
+text-align: center;
+  position: relative;
+}
+a{
+    text-decoration: none;
+    color: #141414;
+
+}
+.pad{
+  padding: 0px;
+
+}
+/* //END// USED IN ITEMS TABS */
+
+/* CARD IN ITEMS */
+ .heart{
+  font-size: 25px;
+  float: right;
+  position: relative;
+  top:-20px;
+ }
+ .inline-p{
+  display: inline;
+ }
+.card oo{
+{
+  position: relative;
+  top: -5px;
+  text-align: right;
+  margin-bottom: -20px;
+}
+}
+.carddd{
+  margin-top:4%;
+}
+
+/* //END// CARD IN ITEMS */
+
+/*FOR CART DETAILS */
+.pricedetails{
+float: right;  
+}
+.coupon{
+  color: #3366FF;
+}
+.delivery{
+  color: #00FFFF;
+}
+.orderbut{
+  text-transform: uppercase;
+}
+.bagfont p{
+  font-size: 12px;
+}
+.qwe{
+border: 0px;
+font-family: roboto;
+}
+.item-divider{
+  font-size: 12px;
+  color:#ffc900;
+}
+.details p{
+    font-size: 12px;
+}
+.but{
+border-color: red;
+    font-size: 12px;
+
+}
+.butwish{
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+}
+/* //END CART DETAILS// */
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.tabs{
+background: url('../img/model.jpg') center !important;
+ background-image: none;
+        color: #FF3333;
+}
+
+#image_upload{
+
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    background-color: #fff;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+/* SWOOSH CARDS */
+/* CORE */
+
+
+swoosh-cards {
+  display: block;
+}
+
+swoosh-card {
+  position: absolute;
+ margin-top: 30%;
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 350px;
+  border-radius: 6px;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+swoosh-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0;
+  z-index: 11;
+}
+
+swoosh-card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+/* DEMO */
+swoosh-card .top {
+  width: 100%;
+  height: 240px;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+}
+
+swoosh-card img {
+  width: 100%;
+}
+
+swoosh-card .bottom {
+  border-radius: 0 0 4px 4px;
+}
+
+swoosh-card .bottom h1 {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+swoosh-card .bottom p {
+  margin: 10px 15px;
+  font-size: 11px;
+}
+
+.discard {
+  position: absolute;
+  left: calc(70% - 35px);
+  bottom: 5px;
+  padding: 7px 10px;
+  color: #E60000;
+  font-weight: bold;
+  font-size: 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+.accept {
+  position: absolute;
+  left: calc(30% - 35px);
+  bottom: 5px;
+  padding: 7px 10px;
+  color: #141414;
+  font-weight: bold;
+  font-size: 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+
+.background-grey {
+  background-color: #333 !important;
+}
+/* //END SWOOSH CARD// */ 
+

@@ -1,0 +1,33 @@
+<ion-view view-title="Browse">
+  <ion-content Style="background: url(img/model.jpg) center; background-size: cover;" >
+    
+    <!--
+    <img collection-repeat="photo in jeweldata"
+      item-width="33%"
+      item-height="180px"
+      ng-src="{{photo.ImgUrl}}" style="padding:1%;">
+    -->
+
+       <div ng-if="cards.active">
+        <swoosh-cards>
+          <swoosh-card ng-repeat="card in cards.active" on-destroy="cardDestroyed($index)">
+
+              <div class="top">
+                <img class="full-image" ng-src="{{ card.image }}" />
+              </div>
+              <div class="bottom">
+                <h1>{{ card.country }}</h1>
+               <center> <p>{{ card.text }}</p></center>
+
+                 <div class="accept" ng-click="discard(card)"><i class="ion-android-close"></i></div>
+                <div class="discard" ng-click="discard(card)"><i class="ion-ios-heart"></i></div>
+
+
+
+            </div>
+          </swoosh-card>
+        </swoosh-cards>
+      </div>
+
+  </ion-content>
+</ion-view>

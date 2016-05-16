@@ -1,0 +1,32 @@
+<ion-view view-title="Contact Us">
+  <ion-content class="padding">
+<div class="item item-heading" style="border:0px; text-align:center">
+<h2>FAQ</h2>
+</div>
+
+       <div ng-repeat="group in groups">
+          <ion-list 
+                    ng-click="toggleGroup(group)"
+                    ng-class="{active: isGroupShown(group)}">
+            &nbsp;
+            {{group.title}}
+          </ion-list> <hr style="color:#ffc900;">
+          <div ng-show="isGroupShown(group)" >
+            <div nav-clear menu-close ng-repeat="content in group.contents" class="item-accordion item item-body" style="border:0px; top:0px; padding-top:0px; font-style: italic" >
+              {{content.line}}
+            </div>
+          </div>
+
+        </div>
+<br>
+
+<div class="item item-heading" style="border:0px; text-align:center; margin-top:10%">
+<h2>REACH US AT</h2>
+</div>
+<div class="item item-body" style="border:0px; text-align:center; padding-top:0px; margin-top:-5%;">
+	<p>Awsomeistas Pvt Ltd.<br>
+	Synergy Building, IIT Delhi<br>
+	Hauz Khas, New Delhi</p>
+</div>
+  </ion-content>
+</ion-view>

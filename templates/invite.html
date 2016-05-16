@@ -1,0 +1,25 @@
+<ion-modal-view ng-controller="cart2Ctrl">
+  <ion-header-bar>
+    <h1 class="title">Invite</h1>
+    <div class="buttons">
+      <button class="button button-clear button-positive" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content style="background: url(img/model.jpg) center; background-size: cover;" >
+
+     <div class="hero no-header flat">
+            <div class="content">
+                <h1 style="color:#fff;">AWESOMISTAS</h1>
+            </div>
+    </div>
+        <div class="list" style="font-family:'Roboto' sans-serif;">
+            <ion-md-input placeholder="Email" highlight-color="balanced" type="text"></ion-md-input>
+            <ion-md-input placeholder="Mobile Number" highlight-color="energized" type="tel"></ion-md-input>
+        </div>
+        <div class="padding">
+            <button class="button button-full button-assertive ink" ng-click="login()">Invite</button>
+        </div>
+
+  </ion-content>
+</ion-modal-view>

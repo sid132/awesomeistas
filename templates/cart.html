@@ -1,0 +1,72 @@
+<ion-view view-title="Your Cart">
+  <ion-content style="background: url(img/model.jpg) center; background-size: cover;" >
+
+        <div class="item item-divider qwe" style="border-bottom:none;">
+ITEMS
+  </div>
+
+
+  <div ng-repeat="sid in siddhant">
+
+
+<div class="card">
+
+<div class="item item-text-wrap">
+
+<div class="" style="height:auto; width:35%; margin-right:0%; float:left; ">
+  <img src="{{sid.img}}" height="auto" width="90%">  
+</div>
+
+<div class="details" style="float:left;width:65%">
+  <p>{{sid.details}}</p>
+  <p>Size: <span>{{sid.size}}</span>
+  <span style="float:right">Quantity: <span>{{sid.quantity}}</span> </span></p>
+  <strong><p>Rs: {{sid.price}}</p></strong>
+</div>
+
+<div style="clear:both"></div>
+
+</div>
+
+<div class="button-bar ">
+  <a class="button button-outline button-energized but" ng-click="del(fag)">Remove</a>
+  <a class="button button-outline button-energized but">Edit</a>
+</div>
+</div>
+</div>
+
+
+  <div class="card">
+  <div class="item item-text-wrap but">
+  <i class="icon ion-bookmark"> Add more from wishlist </i>
+</div>
+  </div>
+
+    <div class="card">
+  <div class="item item-text-wrap but">
+  <i class="icon ion-ios-pricetag"> Apply Coupon</i>
+  </div>
+  </div>
+
+
+  <div class="item item-divider qwe" style="border-bottom:none;">
+PRICE DETAILS
+  </div>
+
+
+<div class="list card">
+<div class="item item-body bagfont">
+<p>Bag Total: <span class="pricedetails">Rs.999</span> </p>
+<!--<p>Coupon Discount: <span class="pricedetails coupon">Apply Coupon</span> </p> -->
+<p>Delivery: <span class="pricedetails delivery">FREE</span></p>
+<p>Total Payable: <span class="pricedetails">Rs.999</span></p>
+</div>
+
+</div>
+<div class="padding">
+<button class="button button-block button-positive order but" ng-click="login()">
+  Place order
+</button>
+</div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,41 @@
+<ion-modal-view ng-controller="cart2Ctrl">
+  <ion-header-bar>
+    <h1 class="title">CART</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content style="background: url(img/model.jpg) center; background-size: cover;" >
+
+<div style="background-color:#141414; color:white; font-family:roboto"><span style="float:right;">STEP 2/3</span></div>
+<div class="item item-divider qwe" style="border:0px;">
+CONFIRM ADDRESS
+</div>
+ <div class="card">
+     <div class="item item-text-wrap">
+        <span ><strong> Siddhant Kandel </strong></span><br>
+        <div class="item item-body>"> 
+        <p class="inline-p"> Synergy Building, Unit II<br> 
+         Hauz Khas<br>
+         New Delhi, 110029<br>
+         Mobile: +91 8377084394<br> </p>
+         </div>
+     </div>
+
+</div>
+
+<div class="list card">
+<div class="item item-body bagfont">
+<p>Bag Total: <span class="pricedetails">Rs.999</span> </p>
+<!--<p>Coupon Discount: <span class="pricedetails coupon">Apply Coupon</span> </p> -->
+<p>Delivery: <span class="pricedetails delivery">FREE</span></p>
+<p>Total Payable: <span class="pricedetails">Rs.999</span></p>
+</div>
+
+</div>
+<div class="padding">
+<button class="button button-full button-positive" ng-click="login()">Proceed to Payment</button>
+</div>
+  </ion-content>
+</ion-modal-view>
